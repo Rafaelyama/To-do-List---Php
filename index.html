@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To do list</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    
+    <div id="to_do">
+        <h1>Things to do</h1>
+
+        <form action="" class="to-do-form">
+            <input type="text" name="descripition" placeholder="Write your task here" required>
+            <button type="submit" class="form-button">
+                <i class='bx bx-plus'></i>
+            </button>
+        </form>
+
+        <div id="tasks">
+            <div class="task">
+                <input type="checkbox" name="progress" class="progress">
+
+                <p class="task-description">
+                    Jogos para platinar
+                </p>
+                
+                <div class="task-actions">
+                    <a href="" class="action-button edit-button">
+                        <i class='bx bxs-edit'></i>
+                    </a>
+
+                    <a href="" class="action-button delete-button">
+                        <i class='bx bxs-trash'></i>
+                    </a>
+                </div>
+
+                <form action="" class="to-do-form edit-task">
+                    <input type="text" name="descripition" placeholder="Edit your task here">
+                    <button type="submit" class="form-button confirm-button">
+                        <i class='bx bx-check'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
